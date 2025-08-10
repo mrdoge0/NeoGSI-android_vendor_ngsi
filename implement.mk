@@ -18,11 +18,7 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
 # Install NeoGSI post-fs-data hook
 PRODUCT_COPY_FILES += \
-    vendor/ngsi/ngsi.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/ngsi.rc \
-    vendor/ngsi/ngsi-post-fs-data.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/ngsi-post-fs-data.sh
-
-# Do some workarounds for Pie / Quince Tart devices that will fix potential bootloops
-PRODUCT_EXTRA_VNDK_VERSIONS += 28 29
+    vendor/ngsi/ngsi.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/ngsi.rc
 
 # SELinux schenanigans
 SELINUX_IGNORE_NEVERALLOWS := true
