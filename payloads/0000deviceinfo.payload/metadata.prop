@@ -1,0 +1,5 @@
+display_name=Device Info
+desc=Provides correct device info to NeoGSI builds.
+author=mrdoge0
+version=1.0
+vcode=10
