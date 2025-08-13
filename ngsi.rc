@@ -1,0 +1,5 @@
+# Init hook to do NeoGSI stuff.
+
+# Execute payload loader on post-fs-data
+on post-fs-data
+  sh /system/ngsi/payload-loader.sh
