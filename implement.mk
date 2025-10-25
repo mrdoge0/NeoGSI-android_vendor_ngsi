@@ -26,3 +26,9 @@ SELINUX_IGNORE_NEVERALLOWS := true
 # Install the NeoGSI version of the resetprop
 PRODUCT_PACKAGES += \
     resetprop_ngsi
+
+# Install 0000deviceinfo.payload
+PRODUCT_COPY_FILES += \
+    vendor/ngsi/payloads/0000deviceinfo.payload/metadata.prop:$(TARGET_COPY_OUT_SYSTEM)/ngsi/payloads/0000deviceinfo.payload/metadata.prop \
+    vendor/ngsi/payloads/0000deviceinfo.payload/checkup.sh:$(TARGET_COPY_OUT_SYSTEM)/ngsi/payloads/0000deviceinfo.payload/checkup.sh \
+    vendor/ngsi/payloads/0000deviceinfo.payload/run-on-apply.sh:$(TARGET_COPY_OUT_SYSTEM)/ngsi/payloads/0000deviceinfo.payload/run-on-apply.sh
