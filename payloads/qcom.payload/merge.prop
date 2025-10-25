@@ -1,0 +1,2 @@
+ro.ngsi.is_qcom=true
+persist.vendor.radio.force_on=1
